@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 0 24px;
+  color: #242124;
+  background: #fff5f8;
+}
+
+.cabecalho-formulario {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px max(24px, calc((100% - 700px) / 2));
+  border-bottom: 1px solid #fce4ec;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-formulario {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #880e4f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.marca-logo {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #c2185b;
+  font-size: 20px;
+}
+
+.botao-home {
+  padding: 10px 0;
+  color: #880e4f;
+  background: transparent;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.botao-home:hover {
+  color: #c2185b;
+  text-decoration: underline;
+}
+
+.formulario-cadastro {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 32px;
+  border: 1px solid #fce4ec;
+  border-radius: 14px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 24px rgba(65, 25, 43, 0.09);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario-cadastro fieldset {
+  margin-bottom: 24px;
+  padding: 24px;
+  border: 1px solid #fce4ec;
+  border-radius: 12px;
+}
+
+.formulario-cadastro legend {
+  padding: 0 8px;
+  color: #880e4f;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.formulario-cadastro p {
+  margin-bottom: 16px;
+}
+
+.formulario-cadastro label {
+  display: block;
+  margin-bottom: 6px;
+  color: #494349;
+  font-weight: bold;
+}
+
+.formulario-cadastro input,
+.formulario-cadastro select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d6c8cd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.formulario-cadastro input:focus,
+.formulario-cadastro select:focus {
+  outline: 3px solid rgba(194, 24, 91, 0.2);
+  border-color: #c2185b;
+}
+
+.formulario-cadastro input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+  accent-color: #c2185b;
+}
+
+.formulario-cadastro input[type="checkbox"] + label {
+  display: inline;
+  font-weight: normal;
+}
+
+.formulario-cadastro button {
+  padding: 12px 22px;
+  border: 2px solid #c2185b;
+  border-radius: 999px;
+  color: #ffffff;
+  background-color: #c2185b;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formulario-cadastro button:hover {
+  border-color: #880e4f;
+  background-color: #880e4f;
+}
+
+.formulario-cadastro button[type="reset"] {
+  margin-left: 8px;
+  color: #880e4f;
+  background-color: transparent;
+}
+
+.formulario-cadastro button[type="reset"]:hover {
+  color: #ffffff;
+  background-color: #880e4f;
+}
+
+@media (max-width: 576px) {
+  .cabecalho-formulario {
+    padding: 14px 12px;
+  }
+
+  .logo-formulario {
+    font-size: 14px;
+  }
+
+  .botao-home {
+    font-size: 14px;
+  }
+
+  .formulario-cadastro {
+    margin: 24px 12px;
+    padding: 20px;
+  }
+
+  .formulario-cadastro fieldset {
+    padding: 16px;
+  }
+
+  .formulario-cadastro button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .formulario-cadastro button[type="reset"] {
+    margin-left: 0;
+  }
+}
