@@ -18,25 +18,31 @@
 
 
     <header>
-        <img src="assets/images/logo_inicio.jpg" alt="Logo do Rotaract Club de Diadema Floreat" width="300"
-            class="logo">
+            <h1>
+                <img src="assets/images/logo_inicio.jpg" alt="Logo do Rotaract Club de Diadema Floreat" width="300"
+                    class="logo">
+            </h1>
 
-        <nav aria-label="Navegação principal">
-            <ul>
-                <li>
-                    <a href="index.html">Início</a>
+            <nav aria-label="Navegação principal">
+              <input type="checkbox" id="menu-check" class="menu-check" aria-label="Abrir ou fechar o menu">
+              <label for="menu-check" class="menu-toggle">☰ Menu</label>
+
+              <ul>
+                <li><a href="index.html" aria-current="page">Início</a></li>
+                <li class="tem-submenu">
+                  <a href="pages/projeto.html">Projetos ▾</a>
+                  <ul class="submenu">
+                  <li><a href="pages/projeto.html#natal-animal">Natal Animal</a></li>
+                  <li><a href="pages/projeto.html#pascoa">Páscoa que Transforma</a></li>
+                  <li><a href="pages/projeto.html#floreat-ruas">Ação Floreat nas Ruas</a></li>
+                  <li><a href="pages/projeto.html#big-mac">Meu Primeiro Big Mac</a></li>
+                  <li><a href="pages/projeto.html#sabonetes">Oficina dos Sabonetes</a></li>
+                  <li><a href="pages/projeto.html#floreat-fest">Floreat Fest</a></li>
+                  </ul>
                 </li>
-
-                <li>
-                    <a href="pages/projeto.html">Projetos</a>
-                </li>
-
-                <li>
-                    <a href="pages/cadastro.html">Cadastro</a>
-                </li>
-            </ul>
-        </nav>
-
+                <li><a href="pages/cadastro.html">Cadastro</a></li>
+              </ul>
+            </nav>
     </header>
 
 
@@ -45,21 +51,26 @@
 
         <section class="apresentacao">
 
-            <h2>Transformando nossa comunidade</h2>
+            
 
-            <p>
-                O Rotaract Club Diadema Floreat reúne jovens e voluntários
-                interessados em desenvolver ações sociais, comunitárias
-                e ambientais na cidade de Diadema.
-            </p>
+                <h2>Transformando nossa comunidade</h2>
 
-            <a href="pages/projeto.html" class="botao">
-                Conheça nossos projetos
-            </a>
+                <p>
+                    O Rotaract Club Diadema Floreat reúne jovens e voluntários
+                    interessados em desenvolver ações sociais, comunitárias
+                    e ambientais na cidade de Diadema.
+                </p>
 
+                <a href="pages/projeto.html" class="botao">
+                    Conheça nossos projetos
+                </a>
 
-            <img src="assets/images/acao_social_inicio.jpg" alt="Voluntários participando de uma ação social"
-                width="600">
+            
+
+            <figure class="imagem-apresentacao">
+                <img src="assets/images/acao_social_inicio.jpg" alt="Voluntários participando de uma ação social"
+                    width="600" height="450">
+            </figure>
 
         </section>
 
@@ -136,6 +147,8 @@
 
             <article class="card">
 
+                <data class="badge badge--social" value="comunidade">Comunidade</data>
+
                 <h3>Ações comunitárias</h3>
 
                 <p>
@@ -148,6 +161,8 @@
 
             <article class="card">
 
+                <data class="badge badge--animal" value="protecao-animal">Proteção animal</data>
+
                 <h3>Proteção animal</h3>
 
                 <p>
@@ -159,6 +174,8 @@
 
 
             <article class="card">
+
+                <data class="badge" value="juventude">Juventude</data>
 
                 <h3>Juventude e liderança</h3>
 
@@ -218,6 +235,12 @@
         </section>
 
     </main>
+
+  <footer>
+    <p>© 2026 Rotaract Club Diadema Floreat</p>
+    <p>Diadema - São Paulo</p>
+  </footer>
+
 
 
 </body>
